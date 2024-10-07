@@ -11,7 +11,11 @@ function calculateLoan() {
     document.getElementById("payment").innerHTML = `Monthly Payment: ${payment.toFixed(2)}`;
 }
 
-const btnEl = document.querySelector(".btn");
+const btnLoanEl = document.getElementById("loan-btn");
+btnLoanEl.addEventListener("click", calculateLoan);
+
+const btnTipEl = document.getElementById("tip-btn");
+btnTipEl.addEventListener("click", calculateTip);
 
 function calculateTip() {
 
