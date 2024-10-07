@@ -15,6 +15,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
+    min-width: 180px;
 }
 
 .input {
@@ -41,4 +42,11 @@ body {
 
 .btn:hover {
     opacity: .7;
+}
+
+@media (max-width:500px) {
+    body {
+        flex-direction: column; /* Define a direção como coluna em telas pequenas */
+        justify-content: flex-start;
+    }
 }
